@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_mark1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:hint="علامة المساق الأول"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_mark2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:inputType="textPersonName"
+        android:hint="علامة المساق الثاني"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mark1" />
+
+    <EditText
+        android:id="@+id/et_mark3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#fff"
+        android:inputType="textPersonName"
+        android:hint="علامة المساق الثالث"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mark2" />
+
+    <Button
+        android:id="@+id/btn_calender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="احسب النتيجة"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mark3" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:paddingStart="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:text="0%"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_calend"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calender" />
+
+    <TextView
+        android:id="@+id/tv_calend"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:paddingStart="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:text="-"
+        android:textColor="#E40F0F"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calender" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calend"
+        >
+
+        <TextView
+            android:id="@+id/tv_levle_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="70sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+        />
+
+        <ImageView
+            android:id="@+id/img_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            android:layout_toEndOf="@+id/tv_levle_mark"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
